@@ -1,0 +1,96 @@
+.text-center{
+    text-align: center;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.container{
+    width: 960px;
+    margin: 0px auto;                                   
+}
+
+
+
+ul.list-product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;           
+    justify-content: flex-start;
+}
+
+
+/* PRODUCT ITEM */
+.product-item{
+    width: 250px;
+    height: 140px;
+    border: 1px solid #f5f5f5;
+    position: relative;                       
+    padding: 5px;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+
+.product-item:hover{
+    border: 1px solid orange;
+   
+}
+
+.product-item a img{           
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 80px;      
+         
+}
+
+.product-item:hover a img{
+    transform: rotate(1deg);
+}
+
+.product-item:hover a.buy-now{
+    display: block;
+    background-color: coral;
+    text-decoration: none;    
+    color: white;
+    text-align: center;   
+    position: absolute;
+    width: 270px;
+    font-size: 10px;   
+    transform: scale(2,2);
+    
+    
+}
+
+.price{
+    color: orange;
+    text-align: center;
+}
+
+.product-name{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+span.discount img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.buy-now{
+    position: absolute;
+    background-color: coral;
+    display: block;
+    text-align: center;   
+    text-decoration: none;    
+    color: white;
+    width: 270px;  
+    height: 50px;
+    top: 150px;
+    transition: all 0.5s;
+}
